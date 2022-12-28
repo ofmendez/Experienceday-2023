@@ -14,7 +14,7 @@
          <img class="BannerFullWidth" src="Images/Banner.svg" />
       </div>
       <div class="SeccionVideo">
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/8yYM73dC9rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/8yYM73dC9rI&showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <br>
       <br>
@@ -92,7 +92,11 @@
                </script>
                <div class="TerminosCondiciones">
                   <div class="AceptarTerminos"> <input  required onchange="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Para poder continuar debes aceptar los Términos y Condiciones.')" id="checkbox" name="checkbox" type="checkbox" /></div>
-                  <div class="TextoTerminos"><label for="checkbox"> Acepto que CISCO y el proveedor del evento administren mis datos para fines exclusivos del evento.</label></div>
+                  <div class="TextoTerminos"><label for="checkbox">Acepto que Cisco procese mi información personal de acuerdo a su <a style="color: var(--color-gris);" href="https://www.cisco.com/c/en/us/about/legal/privacy-full.html#privacy-manager" target="_blank"><b>Declaración de Privacidad en Línea</b></a></label></div>
+               </div>
+               <div class="TerminosCondiciones">
+                  <div class="AceptarTerminos"> <input onchange="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Para poder continuar debes aceptar los Términos y Condiciones.')" id="checkboxInformacion" name="checkboxInformacion" type="checkbox" /></div>
+                  <div class="TextoTerminos"><label for="checkbox">Me gustaría recibir información sobre los productos y servicios de Cisco. Entiendo que puedo cancelar la suscripción en cualquier momento.</label></div>
                </div>
                <button id="buttonSend" type="submit" class="SendButton" form="Registro" value="Submit">ENVIAR</button>
                <button hidden disabled class="loading"  id="loadingMessage">CARGANDO</button>
