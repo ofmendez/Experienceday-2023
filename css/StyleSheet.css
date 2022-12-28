@@ -44,6 +44,7 @@ h3{
   width:100%;
 }
 .SeccionVideo{
+  pointer-events: none;
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(9,114,238,1) 25%, rgba(9,114,238,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
 }
