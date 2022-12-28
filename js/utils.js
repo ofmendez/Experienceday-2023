@@ -1,4 +1,6 @@
 
+import {b64EncodeUnicode } from "./codification.js";
+
 export function InsertElement(tagToAdd, listClasses, content, targetParent, nameId ) {
     // Create element
     const el = document.createElement(tagToAdd);
@@ -44,6 +46,6 @@ export function AnimateWithTransparent(el1, el2, interval) {
 }
 
 export function emailToId(email) {
-    return email.replace(/@/g, ' at ').replace(/[^a-z0-9-]+/gi, '-').replace(/^-|-$/g, '');
+    return b64EncodeUnicode(email).replace(/[0-9_=\/]+/g,'').toUpperCase().substring(0, 8).padStart(8, 'X')
 }
 

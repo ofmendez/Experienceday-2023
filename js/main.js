@@ -25,7 +25,8 @@ const Login = (form)=>{
         form.elements['Email'].value,
         form.elements['Celular'].value,
         form.elements['Invitado'].value,
-        form.elements['QuienInvita'].value
+        form.elements['QuienInvita'].value,
+        form.elements['checkboxInformacion'].checked
     ).then((res)=>{
         form.reset();
         document.getElementById('okForm').hidden=false;
