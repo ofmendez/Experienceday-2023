@@ -6,6 +6,7 @@
       <title>Cisco Experience Day 2023</title>
       <link rel="stylesheet" href="css/StyleSheet.css">
       <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+      <script src="./js/main.js" type="module" defer></script>
    </head>
    <body>
       <div class="Header">
@@ -24,7 +25,7 @@
          <div class="TituloTiempo">TIEMPO PARA INICIAR</div>
          <div class="Timer">
             <div class="ContainerTimer">
-               <script src="JS/countDown.min.js"></script>
+               <script src="js/countDown.min.js"></script>
                <div class="container"></div>
                <script>
                   var cd = new Countdown({
@@ -74,13 +75,13 @@
                <input type="email" id="Email" name="Email" placeholder="* Correo Electrónico" required>
                <input type="tel" id="Celular" name="Celular" placeholder="* Teléfono Celular" required>
             
-               <select id="Invitado" name="Invitado" onchange="showDiv('hidden_div', this)">
+               <select required id="Invitado" name="Invitado" onchange="showDiv('hidden_div', this)">
                   <option disabled selected value="">¿Haz sido invitado por algún partner?</option>
                   <option value="1">Si</option>
                   <option value="0">No</option>
                </select>
                <div id="hidden_div">
-                  <input type="text" id="QuienInvita" name="QuienInvita" placeholder="* ¿Quién te invitó?" required>
+                  <input type="text" id="QuienInvita" name="QuienInvita" placeholder="* ¿Quién te invitó?" >
                </div>
                <script>
                   function showDiv(divId, element)
