@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es-CO">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Cisco Experience Day 2023</title>
+      <link rel="stylesheet" href="css/StyleSheet.css">
+      <link rel="icon" type="image/x-icon" href="Images/Favicon.png">
+   </head>
+   <body>
+      <div class="Header">
+         <img class="BannerFullWidth" src="Images/BannerInicial.svg" />
+         <img class="BannerFullWidth" src="Images/Banner.svg" />
+      </div>
+      <div class="SeccionVideo">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/8yYM73dC9rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="FranjaTiempo">
+         <div class="BordesFranjaTiempo"> &nbsp;</div>
+         <div class="TituloTiempo">TIEMPO PARA INICIAR</div>
+         <div class="Timer">
+            <div class="ContainerTimer">
+               <script src="JS/countDown.min.js"></script>
+               <div class="container"></div>
+               <script>
+                  var cd = new Countdown({
+                      cont: document.querySelector('.container'),
+                      date: {
+                    day: 24,
+                    month: 1,
+                    year: 2023,
+                    hour: 08,
+                    minute: 0,
+                    second: 0,
+                  },
+                      outputTranslation: {
+                          year: 'Years',
+                          week: 'custom_string_Weeks',
+                          day: 'D',
+                          hour: 'H',
+                          minute: 'M',
+                          second: 'S',
+                      },
+                      endCallback: null,
+                      outputFormat: 'day|hour|minute|second',
+                  });
+                  cd.start();
+               </script>
+            </div>
+         </div>
+         <div class="ImagenTiempo"> &nbsp;</div>
+         <div class="BordesFranjaTiempo"> &nbsp;</div>
+      </div>
+      <div class="Content ContentMaxWidth">
+         <div class="LeftContent">
+            <h1>REGISTRESE AHORA.</h1>
+            <h3>Haga parte de este vuelo hacia<br>
+               el futuro donde la transformación<br>
+               será nuestro destino.
+            </h3>
+            <br><br>
+            <a href="HTML/Agenda.html" target="_blank" class="VerAgendaButton">VER AGENDA</a>
+         </div>
+         <!-- ////////////////  SEGUNDA COLUMNA  //////////////////////// -->
+         <div class="RightContent">
+            <form  onsubmit="return TryRegister(this)" action="#" id="Registro">
+               <input type="text" id="NombreCompleto" name="NombreCompleto" placeholder="* Nombre y Apellido" required>
+               <input type="text" id="Compania" name="Compania" placeholder="* Empresa" required>
+               <input type="text" id="Cargo" name="Cargo" placeholder="* Cargo" required>
+               <input type="email" id="Email" name="Email" placeholder="* Correo Electrónico" required>
+               <input type="tel" id="Celular" name="Celular" placeholder="* Teléfono Celular" required>
+            
+               <select id="Invitado" name="Invitado" onchange="showDiv('hidden_div', this)">
+                  <option disabled selected value="">¿Haz sido invitado por algún partner?</option>
+                  <option value="1">Si</option>
+                  <option value="0">No</option>
+               </select>
+               <div id="hidden_div">
+                  <input type="text" id="QuienInvita" name="QuienInvita" placeholder="* ¿Quién te invitó?" required>
+               </div>
+               <script>
+                  function showDiv(divId, element)
+                  {
+                  document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+                  }
+                  
+               </script>
+               <div class="TerminosCondiciones">
+                  <div class="AceptarTerminos"> <input  required onchange="this.setCustomValidity('')" oninvalid="this.setCustomValidity('Para poder continuar debes aceptar los Términos y Condiciones.')" id="checkbox" name="checkbox" type="checkbox" /></div>
+                  <div class="TextoTerminos"><label for="checkbox"> Acepto que CISCO y el proveedor del evento administren mis datos para fines exclusivos del evento.</label></div>
+               </div>
+               <button id="buttonSend" type="submit" class="SendButton" form="Registro" value="Submit">ENVIAR</button>
+               <button hidden disabled class="loading"  id="loadingMessage">CARGANDO</button>
+               <div class="ErrorForm" style="display:none;">Por favor completa correctamente el formulario y vuelve a intentarlo.</div>
+               
+            </form>
+         </div>
+      </div>
+      <div hidden class="OkForm" id="okForm"><div class="OkFormContent"> <div class="TextoPopup">Gracias por registrarte, en unos días recibirás el boleto de ingreso en tu correo electrónico registrado.</div>
+      <br>
+         <button onclick="CerrarPopup();"" class="CerrarPopupButton">CERRAR</button>
+      </div></div>
+
+      <script>
+         let CerrarPopup = () => {
+       
+           let element = document.getElementById("okForm");
+           let hidden = element.getAttribute("hidden");
+       
+           if (hidden) {
+              element.removeAttribute("hidden");
+           } else {
+              element.setAttribute("hidden", "hidden");
+           }
+         }
+       </script>
+
+      <br>
+      <br>
+      <div class="FranjaTexto">POWER <span class="PuntoVerde">●</span> HYBRID <span class="PuntoVerde">●</span> WORK</div>
+      <br>
+      <br>
+      <img class="BannerFullWidth" src="Images/FranjaSellos.svg" />
+      <br>
+      <br>
+      <div class="Footer">
+         <div class="marquee">
+            <div class="track">
+               <div class="content">No se pierda la oportunidad de llevarse a casa grandes premios ● No se pierda la oportunidad de llevarse a casa grandes premios ● No se pierda la oportunidad de llevarse a casa grandes premios ● No se pierda la oportunidad de llevarse a casa grandes premios ● No se pierda la oportunidad de llevarse a casa grandes premios ● No se pierda la oportunidad de llevarse a casa grandes premios ● </div>
+            </div>
+         </div>
+      </div>
+      <br>
+      <br>
+      <div class="Footer">
+         <img class="BannerFullWidth" src="Images/Footer.svg" />
+      </div>
+   </body>
+</html>
