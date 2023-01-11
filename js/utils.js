@@ -46,6 +46,6 @@ export function AnimateWithTransparent(el1, el2, interval) {
 }
 
 export function emailToId(email) {
-    return b64EncodeUnicode(email).replace(/[0-9_=\/]+/g,'').toUpperCase().substring(0, 8).padStart(8, 'X')
+    return b64EncodeUnicode(email).replace(/[0-9_=\/]+/g,'').toUpperCase().substring(0, 15).padStart(15, 'X')
 }
 
