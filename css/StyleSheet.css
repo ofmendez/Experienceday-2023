@@ -40,6 +40,10 @@ h3{
   font-size: clamp(16px, 2.2vw, 42px);
   line-height: 1.2em;
 }
+h4{
+  font-size: clamp(16px, 2vw, 36px);
+  line-height: 1.2em;
+}
 .BannerFullWidth img{
   width:100%;
 }
