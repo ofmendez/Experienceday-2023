@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 1920 302" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,0,-2117.18)">
-        <g id="Artboard1" transform="matrix(1.45547,0,0,0.935112,0,2117.18)">
+    <g transform="matrix(1.45547,0,0,0.935112,0,0)">
+        <g id="Artboard1">
             <rect x="0" y="0" width="1319.17" height="321.982" style="fill:none;"/>
             <g transform="matrix(0.211792,0,0,0.204622,-11.578,127.107)">
                 <g transform="matrix(5.72555,0,0,9.22386,4312.81,-477.339)">
@@ -763,7 +763,10 @@
                         <path d="M0,-3.99L-0.723,-3.986L-0.702,-0.007L0.039,-0.011C0.508,-0.013 0.876,-0.178 1.143,-0.506C1.41,-0.833 1.541,-1.332 1.538,-2.003C1.535,-2.674 1.396,-3.174 1.123,-3.502C0.85,-3.83 0.476,-3.992 0,-3.99M-2.641,-5.276L-0.006,-5.289C2.293,-5.301 3.448,-4.209 3.459,-2.013C3.47,0.182 2.332,1.286 0.045,1.298L-2.607,1.311L-2.641,-5.276Z" style="fill-rule:nonzero;"/>
                     </g>
                     <g transform="matrix(1,0,0,1,855.587,1901.75)">
-                        <path d="M0,-6.139L1.222,-7.35L2.969,-7.036L1.269,-5.91L0,-6.139ZM0.146,-5.611L2.028,-5.272L0.86,1.211L-1.022,0.871L0.146,-5.611Z" style="fill-rule:nonzero;"/>
+                        <path d="M0.146,-5.611L2.028,-5.272L0.86,1.211L-1.022,0.871L0.146,-5.611Z"/>
+                        <g transform="matrix(0.928226,0.372018,-0.372016,0.928226,19.5392,7.73271)">
+                            <path d="M0,-6.139L1.222,-7.35L2.969,-7.036L1.269,-5.91L0,-6.139Z"/>
+                        </g>
                     </g>
                     <g transform="matrix(1,0,0,1,867.684,1904.74)">
                         <path d="M0,-5.268L1.524,-4.695L-0.796,1.47L-2.568,0.802L-3.27,-3.801L-4.701,-0L-6.224,-0.573L-3.904,-6.738L-2.021,-6.029L-1.363,-1.647L0,-5.268Z" style="fill-rule:nonzero;"/>
